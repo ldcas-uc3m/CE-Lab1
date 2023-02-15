@@ -17,15 +17,20 @@ Some advice:
 - You won’t need weeks of computation if you use the tool wisely but the process will take some time, so start soo.
 
 # Installation and execution
-First install JohnTheRipper through your package manager.  
+First install JohnTheRipper and cewl through your package manager.  
 For APT:
 ```
-sudo apt install john
+sudo apt install john cewl
+```
+
+To run it:
+```bash
+bash run.sh
 ```
 
 
 # Extra info
-You can generate secure password hashes with `mkpasswd`, part of the `whois` package.  
+You can generate secure password hashes with `mkpasswd` (part of the `whois` package).  
 To install it in APT:
 ```bash
 sudo apt install whois
@@ -35,4 +40,4 @@ Example of use:
 mkpasswd --method=SHA-512 caca
 ```
 
-You can find some good tutorials [here](https://www.varonis.com/blog/john-the-ripper/), but I recommend [Milo Serdov's tutorial](https://miloserdov.org/?p=5031)
+You can find some good tutorials [here](https://openwall.info/wiki/john/tutorials), but I recommend [Milo Serdov's tutorial](https://miloserdov.org/?p=4961)
