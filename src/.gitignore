@@ -1,3 +1,4 @@
-*.hashes
+*.hash
 output
 *dictionary
+dictionary

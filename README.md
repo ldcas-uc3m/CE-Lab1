@@ -17,7 +17,10 @@ Some advice:
 - You won’t need weeks of computation if you use the tool wisely but the process will take some time, so start soo.
 
 # Installation and execution
-First install JohnTheRipper and cewl through your package manager.  
+Install JohnTheRipper from source, [instructions here](https://github.com/openwall/john/blob/bleeding-jumbo/doc/INSTALL-UBUNTU).  
+If you install it any other way, change the variables `JOHN_PATH`, `JOHN_POT_PATH` and `JOHN_CONF_PATH` in `src/crack.sh`.
+
+Install cewl through your package manager.  
 For APT:
 ```
 sudo apt install john cewl
