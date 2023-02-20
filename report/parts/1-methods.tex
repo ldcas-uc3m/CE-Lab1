@@ -1,19 +1,31 @@
 \section{Methodology}
 
 \subsection{Dictionaries}
-I used 4 dictionaries for the attack:
+I used 5 dictionaries for the attack:
 \begin{enumerate}
     \item \textbf{Top 500 worst passwords:} A list of the 500 most common passwords, this will cover the general cases for passwords.
     \item \textbf{hotmail.txt:} A list of ~9000 (allegded) leaked passwords from Hotmail, also covering for general cases.
     \item \textbf{200 spanish names:} A list of the most common spanish names, as we assume the passwords are (mainly) from spanish people.
-    \item \textbf{lab-inf-uc3m:} Dictionary generated from the webpage of the university's Computer Lab's website, using Cewl.
+    \item \textbf{lab-inf-uc3m:} Dictionary generated from the webpage of the university's Computer Lab's website, using Cewl.\\
+    This should help with some specific university and computer terminology.
+    \item \textbf{rockyou.txt:} The de-facto standard dictionary for attacks.
 \end{enumerate}
 
 \subsection{Rules}
-
-
-\subsection{Attacks}
-
-\subsubsection{Rule attack}
-
-\subsubsection{Dictionary attack}
+I implemented some of my own rules to the previously mentioned dictionaries in order to make them more complete:
+\begin{enumerate}
+    \item \textbf{newL33t:} My own (arguably naive) implementation of l33t sp34k, done by replacing the following letters (both upper and lowercase):
+    \begin{enumerate}
+        \item i $\rightarrow$ 1
+        \item i $\rightarrow$ !
+        \item o $\rightarrow$ 0
+        \item a $\rightarrow$ 4
+        \item l $\rightarrow$ 7
+        \item s $\rightarrow$ \$
+    \end{enumerate}
+    \item \textbf{Numbers:} Appending one, two, or three numbers to the end or the beginning of the word.
+    \item \textbf{Years:} Assuming some people would add their birthyear at the end of their password, we append some possible years (1930-2029).
+    \item \textbf{Punctuation:} We append a couple of punctuation characters to the beginning and end of the words.
+    \item \textbf{UC3M:} The university initials. We try (both upper and lowercase) at the beginning and the end.
+    \item \textbf{Cases:}
+\end{enumerate}

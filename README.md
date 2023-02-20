@@ -6,7 +6,7 @@ Universidad Carlos III de Madrid
 
 # Project statement
 The goal of this lab is to understand how password cracking tools work and to learn how to use a very popular tool, John The Ripper.  
-You were assigned a password file with 10 passwords of a Linux system (`src/data/`). Your goal is to find as many passwords as possible.
+You were assigned a password file with 10 passwords of a Linux system (`src/data/`) in SHA512crypt format (see `$6$` at the start of the hash). Your goal is to find as many passwords as possible.
 
 Some advice:
 - Use as many dictionaries as you like. You can download them from well-known sites
